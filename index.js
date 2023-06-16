@@ -17,5 +17,5 @@ if (marks>79) {
 }
 
 console.log(`Grade: ${grade}`);
-document.write(`Grade: ${grade}`)
+document.write(`Student grade: ${grade}`)
 
