@@ -16,3 +16,6 @@ if (marks>79) {
     grade = "E";
 }
 
+console.log(`Grade: ${grade}`);
+document.write(`Grade: ${grade}`)
+
