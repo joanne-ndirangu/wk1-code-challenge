@@ -11,11 +11,14 @@ Takes the speed of a car as input. If the speed is less than 70 it should print 
 3. Net Salary Calculator -
 The program should calculate an individual's net salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. The following links should be used for values:
 https://www.aren.co.ke/payroll/taxrates.htmLinks
-
 https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/payeLinks
 
 ## Project Setup
 ### Student Grade Generator
+As soon as we run the webpage the user should be prompted to enter the student's marks. For this we use the ```js propmt``` below which pops up on the screen immediately the webpage runs.
+```js
+const marks = prompt("Enter student marks(between 0 and 100):");
+```
 
 
 ### Speed Detector
