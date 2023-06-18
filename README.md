@@ -1,8 +1,7 @@
 # CODE CHALLENGE
 
 ## Description
-This is a series of programs that meet the objectives set. The programs test your knowledge in javascript and apply things we've been taught so far.
-
+This project contains a series of javascript programs that test our knowledge on js and meet the following objectives:
 ### Objectives
 1. Student Grade Generator -
 Should prompt the user to input student marks between 0 and 100 and output the corresponding grade based on given grading system.
