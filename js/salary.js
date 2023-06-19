@@ -2,12 +2,9 @@
 
 const pay = prompt("Enter monthly pay:");
 
-console.log(`Gross Salary: ${pay}`);
-document.write(`Gross Salary: ${pay}`)
-
 // PAYE
 
-function paye() {
+let paye = 0;
 if (pay <= 24000) {
     paye = (pay * 0.1)
 } else if (pay >= 24001 && pay <= 32333) {
@@ -16,10 +13,9 @@ if (pay <= 24000) {
     paye = (pay * 0.30);
 }
 console.log(`PAYE: ${paye}`);
-}
 
 // NHIF Deductions
-function nhif() {
+let nhif = 0;
  if (pay <= 5999) {
     nhif = 150;
  } else if (pay >= 6000 && pay <= 7999) {
@@ -56,16 +52,14 @@ function nhif() {
     nhif = 1700;
  }
  console.log(`NHIF: ${nhif}`);
-}
 
 // NSSF Deductions
 
 const pensionablePay = prompt("Enter pensionable pay")
 
-function nssf() {
-    nssf = pensionablePay * 0.6
+let nssf = 0;
+    nssf = pensionablePay * 0.06
     console.log(`NSSF: ${nssf}`);
-}
 
 // Benefits
 
@@ -76,11 +70,21 @@ function nssf() {
 // const allowableOwnerOccupierInterest = 25000
 // const disabilityExemption = 150000
 
+const benefits = prompt("Enter benefits:");
+console.log(`Benefits: ${benefits}`);
+
 // Net Salary
-let totalDeductions = (pay + nhif + nssf);
+let totalDeductions = (paye + nhif + nssf);
 
-console.log(`Total Deductions: ${totalDeductions}`)
+console.log(`Total Deductions: ${totalDeductions}`);
 
-let netSalary =  (pay - totalDeductions);
-    console.log(`Net Salary: ${netSalary}`)
-    document.write(`Net Salary: ${netSalary}`)
+let netSalary =  (pay + benefits) - totalDeductions;
+    console.log(`Net Salary: ${netSalary}`);
+    console.log(`Gross Salary: ${pay}`);
+
+    document.write(`Gross Salary: ${pay}`)
+    document.write(`PAYE: ${paye}`);
+    document.write(`NHIF Deductions: ${nhif}`);
+    document.write(`NSSF Deductions: ${nssf}`);
+    document.write(`Benefits: ${benefits}`);
+    document.write(`Net Salary: ${netSalary}`);
