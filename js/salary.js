@@ -80,16 +80,21 @@ console.log(`${relief}`)
 // Net Salary
 let totalDeductions = (paye + nhif + nssf);
 
+let taxablePay = pay - benefits;
+console.log(`Taxable pay: ${taxablePay}`);
+
 console.log(`Total Deductions: ${totalDeductions}`);
 
 let netSalary =  pay - totalDeductions;
     console.log(`Net Salary: ${netSalary}`);
     console.log(`Gross Salary: ${pay}`);
     console.log(`Personal relief: ${relief}`)
-    document.write(`Gross Salary: ${pay}`)
-    document.write(`PAYE: ${paye}`);
 
-    document.write(``);
-    document.write(`Benefits: ${benefits}`);
+    document.write(`Gross Salary: ${pay}`)
+    document.write(`Contribution benefit: ${benefits}`);
+    document.write(`Taxable pay: ${taxablePay}`);
+    document.write(`Personal relief: ${relief}`)
+    document.write(`Total Deductions: ${totalDeductions}`);
+    document.write(`PAYE: ${paye}`);
     document.write(`Net Salary: ${netSalary}`);
 }
