@@ -1,6 +1,6 @@
 // Net Salary Calculator
 function salary() {
-const pay = prompt("Enter monthly pay:");
+const pay = prompt("Enter gross salary:");
 
 // PAYE
 
@@ -70,22 +70,26 @@ let nssf = 0;
 // const allowableOwnerOccupierInterest = 25000
 // const disabilityExemption = 150000
 
-const benefits = prompt("Enter benefits:");
+const benefits = prompt("Enter contibution benefit:");
 console.log(`Benefits: ${benefits}`);
+
+//Personal relief
+let relief = 2400;
+console.log(`${relief}`)
 
 // Net Salary
 let totalDeductions = (paye + nhif + nssf);
 
 console.log(`Total Deductions: ${totalDeductions}`);
 
-let netSalary =  (pay + benefits) - totalDeductions;
+let netSalary =  pay - totalDeductions;
     console.log(`Net Salary: ${netSalary}`);
     console.log(`Gross Salary: ${pay}`);
-
+    console.log(`Personal relief: ${relief}`)
     document.write(`Gross Salary: ${pay}`)
     document.write(`PAYE: ${paye}`);
-    document.write(`NHIF Deductions: ${nhif}`);
-    document.write(`NSSF Deductions: ${nssf}`);
+
+    document.write(``);
     document.write(`Benefits: ${benefits}`);
     document.write(`Net Salary: ${netSalary}`);
 }
