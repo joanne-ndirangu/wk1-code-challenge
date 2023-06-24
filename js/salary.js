@@ -1,5 +1,5 @@
 // Net Salary Calculator
-
+function salary() {
 const pay = prompt("Enter monthly pay:");
 
 // PAYE
@@ -88,3 +88,4 @@ let netSalary =  (pay + benefits) - totalDeductions;
     document.write(`NSSF Deductions: ${nssf}`);
     document.write(`Benefits: ${benefits}`);
     document.write(`Net Salary: ${netSalary}`);
+}

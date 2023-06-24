@@ -14,24 +14,22 @@ https://www.aren.co.ke/payroll/taxrates.htmLinks
 https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/payeLinks
 
 ## Project Setup
-### Student Grade Generator
-As soon as we run the webpage on our browser the user should be prompted to enter the student's marks. For this we use the ```js propmt``` below which displays "Enter student marks(between 0 and 100):" on the screen immediately the webpage runs.
-```js
-const marks = prompt("Enter student marks(between 0 and 100):");
-```
-The program then refers to the grading system entered using the "else if" conditio to output the correct student grade.
-If the marks entered are lower or higher than the set range of 0 to 100, the user receives an alert to enter a number within the specified range as the one entered is invalid.
-If the all the input specifications are met the student's grade is printed on the browser.
+### Requirements
+Ubuntu
+Visual studio code
+A working web browser
+Stable internet connection
 
-### Speed Detector
-Run the webpage on your browser and you should get a prompt to enter your speed. The speed is then returned to the console for the necessary point calculations.
-The set demerit points are 0 for all drivers but increase for every 5km/h above the set speed limit. If the speed is 70, "Ok" is printed out but if the speed limit is exceeded the demerit points are issued based on what the speed is.
-Using the ```js Math.floor``` command rounds down the points to the nearest whole number e.g if the speed is 123 the points printed are 10 and not 10.6.
-If the speed generates demerit points that exceed 12, "License suspended" is printed.
-
-### Net Salary Calculator
-As soon as you run the webpage you will be prompted to enter your monthly pay and pensionable pay. The pensionable pay calculation of your nssf deduction. The monthly pay entered will be displayed on the webpage as the gross pay which is the salary before any deductions are made.
-The monthly pay is then used to determine the PAYE, NHIF and NSSF which are deductions to be made from the gross salary. The deductions are then added together to produce the total deductions. The total deductions are deducted from the gross salary to give the net salary.
+### Installation Process
+1. Clone the repository onto your computer by opening your ubuntu terminal and running the instruction below:
+```js git clone git@github.com:joanne-ndirangu/wk1-code-challenge.git```
+2. Once cloned navigate into your the directory using
+```js cd wk1-code-challenge```
+3. Open the code on your visual studio code by typing still on the terminal
+```js code .```
+4. Run the index.html file on your browser using your vs code live server.
+5. Three buttons should appear on your web browser thus you can pick whichever you would like to use.
+6. Once a button is selected a prompt should appear on your screen to enter the respective input and an output will be printed on the screen.
 
 ## Author
 Joanne Ndirangu.

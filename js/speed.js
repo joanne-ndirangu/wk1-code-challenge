@@ -1,4 +1,5 @@
 // Speed Detector
+function speed() {
 const speed = prompt("Enter speed:");
 
     const speedLimit = 70;       //any speed above this gets demerit points
@@ -21,6 +22,4 @@ const speed = prompt("Enter speed:");
              console.log(`Points:${demeritPoints}`)
              document.write(`Points:${demeritPoints}`)    //prints demerit points
          }
-
-
-
+        }
